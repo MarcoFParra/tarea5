@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/rl_res"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#ddD81B60"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_res"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textSize="22dp"
+            android:text="Resultados: "/>
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/arrow_up_float"
+            android:rotation="270"
+            android:layout_toLeftOf="@id/img_next"/>
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            android:id="@+id/img_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/arrow_up_float"
+            android:rotation="90"
+            android:layout_marginEnd="12dp"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:hint="Ingrese su nota aqui"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mp.tareas.tarea5.MainActivity">
+    <item
+        android:id="@+id/action_open"
+        android:orderInCategory="100"
+        android:title="Abrir"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:title="Guardar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_save_as"
+        android:orderInCategory="100"
+        android:title="Guardar como"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_search"
+        android:iconTint="@android:color/black"
+        android:title="Buscar texto"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+
+</menu>
